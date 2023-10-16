@@ -1,0 +1,32 @@
+<!--    This is based on the original footer file
+        https://github.com/chrisrhymes/bulma-clean-theme/blob/5efd9b84fb5f727f5918a5a3e60036c2d058772d/_includes/showcase.html
+-->
+
+{% if page.showcase %}
+    {% assign showcase = site.data.[page.showcase].items | sort: "year" | reverse %}
+
+    {% for item in showcase %}
+        <section class="showcase">
+                
+            <div class="showcase-content">
+                <div class="columns is-centered">
+                    <div class="column is-8-desktop is-12-tablet">
+                        <img src="{{ item.img | relative_url }}" />
+                        <p class="title">{{ item.title }}</p>
+                        <p class="subtitle">{{ item.by }}</p>
+
+                        <div class="content">
+                            <!--<p>{{ item.description | markdownify }}</p>-->
+                            {{item.event}} - {{item.date}} {{item.year}}
+                        </div>
+
+                        <a href="{{ item.url }}" class="button is-primary">
+                            Event Link
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    {% endfor %}
+{% endif %}
