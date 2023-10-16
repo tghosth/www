@@ -8,7 +8,7 @@ contacts:
     - label: Michal's LinkedIn profile
       url: https://www.linkedin.com/in/michal-kamensky-a65804247
       icon: fab fa-linkedin-in
-    - label: Avi's Twitter profile
+    - label: Michal's Twitter profile
       icon: fab fa-twitter
       url: https://twitter.com/sec_tigger
 ---
