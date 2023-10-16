@@ -3,6 +3,10 @@ layout: default
 title: Fred
 ---
 
+<!--
+    This is based on https://github.com/chrisrhymes/bulma-clean-theme/blob/5efd9b84fb5f727f5918a5a3e60036c2d058772d/_layouts/product.html
+-->
+
 <div class="columns is-multiline">
 
     <div class="column is-6">
@@ -13,10 +17,21 @@ title: Fred
     </div>
 
     <div class="column is-6">
-        <p class="title is-3">{{ page.title }}</p>
-        <p class="subtitle is-3">{{ page.subtitle }}</p>
+        <!--<p class="title is-3">{{ page.title }}</p>
+        <p class="subtitle is-3">{{ page.subtitle }}</p>-->
+                     
+    <!--</div>
+Before, description was under the picture, removing this
+moves the description to next to the picture.
+    <div class="column is-10">-->
         
-        
+        <p class="title is-4">Description</p>
+        <div class="content">
+            
+    
+            {{ content }}
+        </div>
+
         {% if page.contacts %}
         <div class="content">
             {% for contact in page.contacts %}
@@ -36,26 +51,9 @@ title: Fred
             {% endfor %}
         </div>
         {% endif %}
-    <!--</div>
-Before, description was under the picture, removing this
-moves the description to next to the picture.
-    <div class="column is-10">-->
-        <p class="title is-4">Description</p>
-        <div class="content">
-            
-    
-            {{ content }}
-        </div>
+        <br>
+        <a href="/team">Back to <strong>Our Team</strong></a>
     </div>
-
-    {% if site.data.reviews[page.product_code] %}
-    <div class="column is-12">
-        <p class="title is-4">Reviews</p>
-        {% for review in site.data.reviews[page.product_code] %}
-        {% include review.html %}
-        {% endfor %}
-    </div>
-    {% endif %}
 
 </div>
 
