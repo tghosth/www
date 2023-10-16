@@ -1,6 +1,9 @@
-- name: Our Services
+- name: How we can help you
   link: /services/
-- name: Our Team
+- name: Training Courses
+  link: /training/
+- name: Who are we
   link: /team/
-- name: Blog
-  link: /blog/
+# This can be added back in when we have blog posts
+#- name: Blog
+# link: /blog/

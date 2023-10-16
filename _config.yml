@@ -52,6 +52,16 @@ collections:
     layout: team-member
     image: https://via.placeholder.com/800x600
     show_sidebar: false
+  service-details: 
+    output: true
+    layout: service
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false
+  training-courses: 
+    output: true
+    layout: service
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
