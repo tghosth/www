@@ -6,4 +6,5 @@ layout: page
 showcase: wherewewere_events
 show_sidebar: false
 sort: year
+hero_height: is-small
 ---

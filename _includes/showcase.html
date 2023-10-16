@@ -19,7 +19,16 @@
             <div class="showcase-content">
                 <div class="columns is-centered">
                     <div class="column is-8-desktop is-12-tablet">
+
+                        {%if item.youtube %}
+                            {% include youtube.html video=item.youtube %}
+                        {% endif %}
+                        {%if item.vimeo %}
+                            {% include vimeo.html video=item.vimeo %}
+                        {% endif %}
                         <img src="{{ item.img | relative_url }}" />
+
+                        
                         <p class="title">{{ item.title }}</p>
                         <p class="subtitle">{{ item.by }}</p>
 
