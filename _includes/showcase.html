@@ -3,9 +3,17 @@
 -->
 
 {% if page.showcase %}
-    {% assign showcase = site.data.[page.showcase].items | sort: "year" | reverse %}
+    {% assign showcase = site.data.[page.showcase].items | sort:"dateval" | reverse%}
 
     {% for item in showcase %}
+        {% assign event_date = item.dateval | date: "%B %d, %Y" }
+        {% if item.date %}
+            {% if item.year %}
+                {% assign event_date = {{item.date}} | append: ", " | append: {{item.year}}}
+            {% endif %}
+        {% endif %}
+
+
         <section class="showcase">
                 
             <div class="showcase-content">
@@ -17,7 +25,7 @@
 
                         <div class="content">
                             <!--<p>{{ item.description | markdownify }}</p>-->
-                            {{item.event}} - {{item.date}} {{item.year}}
+                            {{item.event}} - {{event_date}}
                         </div>
 
                         <a href="{{ item.url }}" class="button is-primary">
