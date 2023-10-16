@@ -1,0 +1,28 @@
+<!--    This is based on the original footer file
+        https://github.com/chrisrhymes/bulma-clean-theme/blob/5efd9b84fb5f727f5918a5a3e60036c2d058772d/_includes/footer.html
+-->
+<footer class="footer">
+    <div class="container">
+        
+        {% if site.footer_menu %}
+        <div class="columns is-multiline">
+            {% for item in site.data[site.footer_menu] %}
+            <div class="column has-text-centered">
+                <div>
+                    <a href="{{ item.link | relative_url }}" class="link">{{ item.name }}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+
+         <div class="has-text-centered">
+            <p class="">© {{ "now" | date: "%Y" }} Bounce Consulting Ltd.</p>
+        </div>
+
+        <div class="content is-small has-text-centered">
+            <p class="">Original Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
+        </div>
+    </div>
+</footer>
