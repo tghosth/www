@@ -4,6 +4,7 @@ subtitle: Efficient, Value-Driven Security
 layout: page
 #callouts: home_callouts
 show_sidebar: false
+hero_height: is-small
 ---
 
 At Bounce Security, we care about doing security the right way.

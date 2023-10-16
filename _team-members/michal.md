@@ -2,6 +2,7 @@
 title: Michal Kamensky
 subtitle: Junior Security Analyst
 layout: team-member
+hero_height: is-small
 img: /assets/img/MichalK1.png
 sort_order: 5
 contacts:

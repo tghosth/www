@@ -2,6 +2,7 @@
 title: Bounce Security
 subtitle: About
 layout: team-member
+hero_height: is-small
 img: /assets/img/BounceLogo.png
 sort_order: 6
 contacts:

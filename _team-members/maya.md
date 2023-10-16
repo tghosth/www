@@ -2,6 +2,7 @@
 title: Maya Douglen
 subtitle: COO
 layout: team-member
+hero_height: is-small
 img: /assets/img/MayaD1.png
 sort_order: 3
 ---
