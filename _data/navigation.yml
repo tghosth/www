@@ -1,0 +1,6 @@
+- name: Our Services
+  link: /services/
+- name: Our Team
+  link: /team/
+- name: Blog
+  link: /blog/

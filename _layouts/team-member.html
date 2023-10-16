@@ -1,0 +1,61 @@
+---
+layout: default
+title: Fred
+---
+
+<div class="columns is-multiline">
+
+    <div class="column is-6">
+        <!--<figure class="image is-3by3">-->
+        <figure class="image">
+            <img src="{{ page.img }}" />
+        </figure>
+    </div>
+
+    <div class="column is-6">
+        <p class="title is-3">{{ page.title }}</p>
+        <p class="subtitle is-3">{{ page.subtitle }}</p>
+        
+        
+        {% if page.contacts %}
+        <div class="content">
+            {% for contact in page.contacts %}
+            <p>
+                <span class="icon">
+                    {% if contact.icon %}
+                        {% if contact.icon contains " "%}
+                            <i class="{{ contact.icon }}"></i>
+                        {% else %}
+                            <i class="fas {{ contact.icon }}"></i>
+                        {% endif %}
+                    {% else %}
+                    <i class="fas fa-circle fa-xs"></i>
+                    {% endif %}
+                </span> 
+                <a href="{{contact.url}}">{{contact.label}}</a></p>
+            {% endfor %}
+        </div>
+        {% endif %}
+    <!--</div>
+Before, description was under the picture, removing this
+moves the description to next to the picture.
+    <div class="column is-10">-->
+        <p class="title is-4">Description</p>
+        <div class="content">
+            
+    
+            {{ content }}
+        </div>
+    </div>
+
+    {% if site.data.reviews[page.product_code] %}
+    <div class="column is-12">
+        <p class="title is-4">Reviews</p>
+        {% for review in site.data.reviews[page.product_code] %}
+        {% include review.html %}
+        {% endfor %}
+    </div>
+    {% endif %}
+
+</div>
+
