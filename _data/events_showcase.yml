@@ -1,4 +1,39 @@
 items:
+
+  - event:  NDC Security 2024 (Conference)
+    dateval: 2024-01-11
+    title: "No Size Fits All: Empowering Engineers with Custom Application Security tests"
+    img: assets/img/ndcsecurity2024.png
+    url: https://ndc-security.com/agenda/no-size-fits-all-empowering-engineers-with-custom-application-security-tests-0mgr/09szzp7feis
+    by: Michal Kamensky
+    info:
+
+  - event:  NDC Security 2024 (Conference)
+    dateval: 2024-01-11
+    title: Tune your Toolbox for Velocity and Value
+    img: assets/img/ndcsecurity2024.png
+    url: https://ndc-security.com/agenda/tune-your-toolbox-for-velocity-and-value-0703/0ndwga6o99b
+    by: Josh Grossman
+    info:
+
+  - event:  NDC Security 2024 (Workshops)
+    year: 2024
+    date: January 8-9th
+    dateval: 2024-01-08
+    title: Building a High-Value AppSec Scanning Programme
+    img: assets/img/ndcsecurity2024.png
+    url: https://ndc-security.com/workshops/building-a-high-value-appsec-scanning-programme/a4506c89b1f9
+    by: Josh Grossman
+    info:
+
+  - event:  DeveloperWeek Enterprise 2023
+    dateval: 2023-11-16
+    title: Discover Your Inner Security Engineer with This One Weird Trick (Hackers Hate It!)
+    img: assets/img/DWE_preview.jpg
+    url: https://sched.co/1T2gz
+    by: Josh Grossman
+    info:
+  
   - event:  ThreatModCon 2023
     dateval: 2023-10-29
     title: Threat Modeling

@@ -3,7 +3,13 @@
 -->
 
 {% if page.showcase %}
-    {% assign showcase = site.data.[page.showcase].items | sort:"dateval" | reverse%}
+    {% assign showcase = site.data.[page.showcase].items | sort:"dateval" %}
+
+        {% if page.show_events %}
+            {% if page.show_events == "past" %}
+            {% assign showcase = showcase | reverse %}
+            {% endif %}
+        {% endif %}    
 
     {% for item in showcase %}
 
