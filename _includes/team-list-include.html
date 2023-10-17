@@ -1,0 +1,37 @@
+<!--
+    This is based on https://github.com/chrisrhymes/bulma-clean-theme/blob/5efd9b84fb5f727f5918a5a3e60036c2d058772d/_layouts/product-category.html
+-->
+
+<div class="columns is-multiline">
+
+ 
+    {% assign sorted_team = site.team-members | sort:page.sort %}
+  
+    {% for teammember in sorted_team %}
+    <div class="column is-4-desktop is-6-tablet">
+  
+      <a href="{{ teammember.url | relative_url }}">
+  
+        <div class="card">
+  
+          {% if teammember.img %}
+          <div class="card-image">
+            <!--<figure class="image is-4by3">-->
+            <figure class="image">
+              <img src="{{ teammember.img }}" alt="{{ teammember.name }}" />
+            </figure>
+          </div>
+          {% endif %}
+          <div class="card-content">
+  
+            <p class="title is-4">{{ teammember.title }}</h2>
+            <p class="subtitle is-4">{{ teammember.subtitle }}</p>  
+  
+          </div>
+        </div>
+  
+      </a>
+  
+    </div>
+  {% endfor %}
+  </div>

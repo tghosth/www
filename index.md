@@ -1,13 +1,21 @@
 ---
 title: Bounce Security
 subtitle: Efficient, Value-Driven Security
-layout: page
+layout: homepage
 #callouts: home_callouts
 show_sidebar: false
 hero_height: is-small
 hero_link: https://forms.office.com/r/UQcj1NyLtB
 hero_link_text: Get in contact with us!
+services_head: Value-driven Security services
+services_body: How can we add value to your software security processes?
+training_head: Software Security Training
+training_body: How can we help you level up your skills?
+team_head: Our Team
+team_body: Check out our fantastic team!
 ---
+
+#### About Bounce Security
 
 At Bounce Security, we care about doing security the right way.
 
