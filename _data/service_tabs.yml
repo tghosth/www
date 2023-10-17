@@ -1,0 +1,10 @@
+alignment: is-top
+style: is-boxed is-toggle
+size: is-large
+items:
+  - name: Value-driven Security Services
+    link: /services/
+    icon: fa-smile-wink
+  - name: Software Security Training
+    link: /training/
+    icon: fa-square
