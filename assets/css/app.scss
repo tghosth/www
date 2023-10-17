@@ -23,3 +23,8 @@ $body-family: 'Ubuntu', 'Nunito Sans', Calibri, Verdana, Segoe, Arial, sans-seri
 
 // Import Main CSS file from theme
 @import "main";
+
+
+body {
+	text-align: justify
+}
