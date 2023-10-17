@@ -85,3 +85,6 @@ collections:
 
 exclude:
     - README.md
+
+include:
+    - _headers
