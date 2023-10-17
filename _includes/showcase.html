@@ -6,44 +6,67 @@
     {% assign showcase = site.data.[page.showcase].items | sort:"dateval" | reverse%}
 
     {% for item in showcase %}
-        {% assign event_date = item.dateval | date: "%B %d, %Y" }
-        {% if item.date %}
-            {% if item.year %}
-                {% assign event_date = {{item.date}} | append: ", " | append: {{item.year}}}
+
+        {% assign process_event = true %}
+        
+        {% if page.show_events %}
+            
+            {% assign today_date = 'now' | date: '%s' %}
+            {% assign event_date = item.dateval | date: '%s' %}
+
+            {% if page.show_events == "future" %}
+                {% if event_date < today_date %}
+                    {% assign process_event = false %}
+                {% endif %}
+            {% endif %}
+            {% if page.show_events == "past" %}
+                {% if event_date >= today_date %}
+                    {% assign process_event = false %}
+                {% endif %}
             {% endif %}
         {% endif %}
+        
+        {% if process_event == true %}
+
+            {% assign event_date = item.dateval | date: "%B %d, %Y" }
+            {% if item.date %}
+                {% if item.year %}
+                    {% assign event_date = {{item.date}} | append: ", " | append: {{item.year}}}
+                {% endif %}
+            {% endif %}
 
 
-        <section class="showcase">
-                
-            <div class="showcase-content">
-                <div class="columns is-centered">
-                    <div class="column is-8-desktop is-12-tablet">
+            <section class="showcase">
+                    
+                <div class="showcase-content">
+                    <div class="columns is-centered">
+                        <div class="column is-8-desktop is-12-tablet">
 
-                        {%if item.youtube %}
-                            {% include youtube.html video=item.youtube %}
-                        {% endif %}
-                        {%if item.vimeo %}
-                            {% include vimeo.html video=item.vimeo %}
-                        {% endif %}
-                        <img src="{{ item.img | relative_url }}" />
+                            {%if item.youtube %}
+                                {% include youtube.html video=item.youtube %}
+                            {% endif %}
+                            {%if item.vimeo %}
+                                {% include vimeo.html video=item.vimeo %}
+                            {% endif %}
+                            <img src="{{ item.img | relative_url }}" />
 
-                        
-                        <p class="title">{{ item.title }}</p>
-                        <p class="subtitle">{{ item.by }}</p>
+                            
+                            <p class="title">{{ item.title }}</p>
+                            <p class="subtitle">{{ item.by }}</p>
 
-                        <div class="content">
-                            <!--<p>{{ item.description | markdownify }}</p>-->
-                            {{item.event}} - {{event_date}}
+                            <div class="content">
+                                <!--<p>{{ item.description | markdownify }}</p>-->
+                                {{item.event}} - {{event_date}}
+                            </div>
+
+                            <a href="{{ item.url }}" class="button is-primary" target="_blank" rel="noopener noreferrer" >
+                                Event Link
+                            </a>
                         </div>
-
-                        <a href="{{ item.url }}" class="button is-primary">
-                            Event Link
-                        </a>
                     </div>
-                </div>
 
-            </div>
-        </section>
+                </div>
+            </section>
+        {% endif %}
     {% endfor %}
 {% endif %}

@@ -1,0 +1,11 @@
+# Search here: https://fontawesome.com/v5/search?q=people&o=r&m=free
+alignment: is-left is-fullwidth
+style: is-toggle
+size: is-medium
+items:
+  - name: Upcoming events
+    link: /events.html
+    icon: fa-search
+  - name: Past Events
+    link: /eventspast.html
+    icon: fa-backward
