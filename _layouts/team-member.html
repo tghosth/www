@@ -34,21 +34,25 @@ moves the description to next to the picture.
 
         {% if page.contacts %}
         <div class="content">
-            {% for contact in page.contacts %}
             <p>
+            {% for contact in page.contacts %}
+            
                 <span class="icon">
+                    <a href="{{contact.url}}">
                     {% if contact.icon %}
                         {% if contact.icon contains " "%}
-                            <i class="{{ contact.icon }}"></i>
+                            <i class="{{ contact.icon }} fa-lg"></i>
                         {% else %}
-                            <i class="fas {{ contact.icon }}"></i>
+                            <i class="fas {{ contact.icon }} fa-lg"></i>
                         {% endif %}
                     {% else %}
                     <i class="fas fa-circle fa-xs"></i>
                     {% endif %}
+                    </a>
                 </span> 
-                <a href="{{contact.url}}">{{contact.label}}</a></p>
+                
             {% endfor %}
+            </p>
         </div>
         {% endif %}
         <br>
