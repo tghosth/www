@@ -1,7 +1,10 @@
 - name: How we can help you
-  link: /services/
-- name: Training Courses
-  link: /training/
+  link: /#
+  dropdown:
+  - name: Value-driven Security Services  
+    link: /services/
+  - name: Software Security Training
+    link: /training/
 - name: Who are we
   link: /team/
 - name: Where we were

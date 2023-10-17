@@ -1,6 +1,6 @@
 ---
-title: Our training
-subtitle: How can we level you up?
+title: Software Security Training
+subtitle: How can we help you level up your skills?
 layout: default
 show_sidebar: false
 callouts: training_callout
