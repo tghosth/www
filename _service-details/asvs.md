@@ -3,8 +3,8 @@ title: Software Security Requirements with the ASVS
 subtitle: Understanding how to better use this OWASP Flagship project
 layout: service
 hero_height: is-small
-backlink: /training
-backname: Training
+backlink: /services
+backname: Value
 ---
 
 Security incidents due to software bugs are featuring more prominently in mainstream news with each passing year. However, if you are in a software engineering, architecture, or product management role, this may be a specialist area where you have less familiarity.

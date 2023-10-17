@@ -16,3 +16,27 @@ items:
       I need assistance with my existing Application/Product Security program.
     call_to_action_name: Read More
     call_to_action_link: /service-details/consulting/
+
+  - title: Threat Modeling Workshop
+    #subtitle: Example subtitle 1
+    icon: fa-shield-alt
+    description: >
+      I want to learn how to adopt sustainable threat modelling practices
+    call_to_action_name: Read More
+    call_to_action_link: /service-details/threatmodeling/
+
+  - title: Software Security Requirements with the ASVS
+    #subtitle: Example subtitle 1
+    icon: fa-tasks
+    description: >
+      I want to learn how to use the OWASP ASVS to build secure software
+    call_to_action_name: Read More
+    call_to_action_link: /service-details/asvs/
+
+  - title: Building a High-Value AppSec Scanning Programme
+    #subtitle: Example subtitle 2
+    icon: fa-tools
+    description: >
+      I want to understand how to get better value from SAST, DAST and SCA tools.
+    call_to_action_name: Read More
+    call_to_action_link: /service-details/appsecscanning/

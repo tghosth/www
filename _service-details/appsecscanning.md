@@ -3,8 +3,8 @@ title: Building a High-Value AppSec Scanning Programme
 subtitle: Understanding how to get better value from SAST, DAST and SCA tools.
 layout: service
 hero_height: is-small
-backlink: /training
-backname: Training
+backlink: /services
+backname: Value
 ---
 
 You bought the application security tools, you have the findings, but now what? Many organisations find themselves drowning in “possible vulnerabilities”, struggling to streamline their processes and not sure how to measure their progress.
