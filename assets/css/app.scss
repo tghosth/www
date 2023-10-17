@@ -29,6 +29,13 @@ $body-family: 'Ubuntu', 'Nunito Sans', Calibri, Verdana, Segoe, Arial, sans-seri
 	text-align: justify
 }
 
+// Keep certain content items around the site centered rather than justified.
+// Generally where there is only minimal text
 .content-center {
 	text-align: center
+}
+
+// Make logo in navbar slightly bigger (in header.html)
+.navbar-item-logo img {
+    max-height: 2.5rem;
 }
