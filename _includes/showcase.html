@@ -57,12 +57,12 @@
                             <img src="{{ item.img | relative_url }}" />
 
                             
-                            <p class="title">{{ item.title }}</p>
-                            <p class="subtitle">{{ item.by }}</p>
+                            <p class="title">{{ item.event }}</p>
+                            <p class="subtitle">{{ item.title }}</p>
 
                             <div class="content">
                                 <!--<p>{{ item.description | markdownify }}</p>-->
-                                {{item.event}} - {{event_date}}
+                                {{item.by}} - {{event_date}}
                             </div>
 
                             <a href="{{ item.url }}" class="button is-primary" target="_blank" rel="noopener noreferrer" >
