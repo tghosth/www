@@ -38,7 +38,7 @@ moves the description to next to the picture.
             {% for contact in page.contacts %}
             
                 <span class="icon">
-                    <a href="{{contact.url}}">
+                    <a href="{{contact.url}}" target="_blank" rel="noopener noreferrer">
                     {% if contact.icon %}
                         {% if contact.icon contains " "%}
                             <i class="{{ contact.icon }} fa-lg"></i>

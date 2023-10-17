@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="content">
+    {{ content }}
+</div>
+
+<br />
+<div class="subtitle">
+    <strong>{{ page.services_head }}</strong>  
+</div>
+<div class="content">
+    {{ page.services_body }}
+</div>
+
+{% include callouts.html callouts="services_callout" callouts_height="is-small" %}
+
+<br />
+<br />
+<div class="subtitle">
+    <strong>{{ page.training_head }}</strong>
+</div>
+<div class="content">
+    {{ page.training_body }}
+</div>
+
+{% include callouts.html callouts="training_callout" callouts_height="is-small" %}
+
+<br />
+<br />
+<div class="subtitle">
+    <strong>{{ page.team_head }}</strong>
+</div>
+<div class="content">
+    {{ page.team_body }}
+</div>
+
+{% include team-list-include.html %}
