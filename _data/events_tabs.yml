@@ -5,7 +5,7 @@ size: is-medium
 items:
   - name: Upcoming events
     link: /events.html
-    icon: fa-search
+    icon: fa-calendar-alt
   - name: Past Events
     link: /eventspast.html
     icon: fa-backward
