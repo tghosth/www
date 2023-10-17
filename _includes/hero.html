@@ -9,7 +9,9 @@
             <h1 class="title is-2">{{ page.title }}</h1>
             <p class="subtitle is-3">{{ page.subtitle }}</p>
             {% if page.hero_link %}
-                <a href="{{ page.hero_link | relative_url }}" class="button is-info is-large">{{ page.hero_link_text }}</a>
+                <a href="{{ page.hero_link | relative_url }}" 
+                class="button {% if page.hero_link_colour %} {{ page.hero_link_colour }} {% else %} is-info {% endif %}
+                              {% if page.hero_link_size %} {{ page.hero_link_size }} {% else %} is-large {% endif %}">{{ page.hero_link_text }}</a>
             {% endif %}
         </div>
     </div>

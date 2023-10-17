@@ -7,6 +7,8 @@ show_sidebar: false
 hero_height: is-small
 hero_link: https://forms.office.com/r/UQcj1NyLtB
 hero_link_text: Get in contact with us!
+hero_link_colour: is-dark
+hero_link_size: is-medium
 services_head: Value-driven Security services
 services_body: How can we add value to your software security processes?
 training_head: Software Security Training

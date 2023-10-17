@@ -88,3 +88,20 @@ exclude:
 
 include:
     - _headers
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "service-details"
+    values:
+      call_link: mailto:info@bouncesecurity.com
+      call_text: Let's speak about this!
+  -
+    scope:
+      path: ""
+      type: "training-courses"
+    values:
+      call_link: mailto:info@bouncesecurity.com
+      call_text: Let's speak about this!
