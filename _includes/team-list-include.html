@@ -2,13 +2,6 @@
     This is based on https://github.com/chrisrhymes/bulma-clean-theme/blob/5efd9b84fb5f727f5918a5a3e60036c2d058772d/_layouts/product-category.html
 -->
 
-{% if page.mode == "modal" %}
-<a href="/team">Go to Hyperlink</a>
-{% endif %}
-{% if page.mode == "hyperlink" %}
-<a href="/team2">Go to Modal</a>
-{% endif %}
-
 <div class="columns is-multiline">
    
   {% assign sorted_team = site.team-members | sort:page.sort %}
