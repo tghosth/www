@@ -20,10 +20,10 @@ title: Fred
         <!--<p class="title is-3">{{ page.title }}</p>
         <p class="subtitle is-3">{{ page.subtitle }}</p>-->
                      
-    <!--</div>
-Before, description was under the picture, removing this
-moves the description to next to the picture.
-    <div class="column is-10">-->
+        <!--</div>
+            Before, description was under the picture, removing this
+            moves the description to next to the picture.
+        <div class="column is-10">-->
         
         <p class="title is-4">Description</p>
         <div class="content">
@@ -33,27 +33,7 @@ moves the description to next to the picture.
         </div>
 
         {% if page.contacts %}
-        <div class="content">
-            <p>
-            {% for contact in page.contacts %}
-            
-                <span class="icon">
-                    <a href="{{contact.url}}" target="_blank" rel="noopener noreferrer">
-                    {% if contact.icon %}
-                        {% if contact.icon contains " "%}
-                            <i class="{{ contact.icon }} fa-lg"></i>
-                        {% else %}
-                            <i class="fas {{ contact.icon }} fa-lg"></i>
-                        {% endif %}
-                    {% else %}
-                    <i class="fas fa-circle fa-xs"></i>
-                    {% endif %}
-                    </a>
-                </span> 
-                
-            {% endfor %}
-            </p>
-        </div>
+            {% include contacts.html contacts=page.contacts %}
         {% endif %}
         <br>
         <a href="/team">Back to <strong>Our Team</strong></a>

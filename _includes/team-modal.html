@@ -1,0 +1,32 @@
+<!--    This is based on an original file
+        https://github.com/chrisrhymes/bulma-clean-theme/blob/5efd9b84fb5f727f5918a5a3e60036c2d058772d/_includes/image-modal.html
+-->
+
+<div x-data="{ open: false }" markdown="0">
+    <a x-on:click="open = true" title="View large image">
+        <figure class="image {{ include.ratio | default: is-16by9 }}">
+            <img src="{{ include.teammember.img | absolute_url }}" alt="{{ include.teammember.title }}">
+        </figure>
+    </a>
+    <div class="modal" x-bind:class="open ? 'is-active' : ''" x-cloak>
+        <div class="modal-background" x-on:click="open = false"></div>
+        <div class="modal-content-narrower modal-content">
+            {% if include.teammember.largeimg %}
+                <img src="{{ include.teammember.largeimg | absolute_url }}" alt="{{ include.teammember.title }}">
+            {% else %}
+                <img src="{{ include.teammember.img | absolute_url }}" alt="{{ include.teammember.title }}">
+            {% endif %}
+            
+            <div class="column">
+                <p class="title is-3">{{ include.teammember.title }}</p>
+                <p class="subtitle is-3">{{ include.teammember.subtitle }}</p>
+                <div class="content">
+                    {{ include.teammember.content }}
+                </div>
+            </div>
+        </div>
+    
+       
+        <button class="modal-close is-large" aria-label="close" x-on:click="open = false"></button>
+    </div>
+</div>

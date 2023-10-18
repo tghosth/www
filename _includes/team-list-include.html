@@ -13,7 +13,7 @@
       <a href="{{ teammember.url | relative_url }}">
   
         <div class="card">
-  
+          
           {% if teammember.img %}
           <div class="card-image">
             <!--<figure class="image is-4by3">-->
@@ -25,12 +25,15 @@
           <div class="card-content">
   
             <p class="title is-4">{{ teammember.title }}</h2>
-            <p class="subtitle is-4">{{ teammember.subtitle }}</p>  
-  
-          </div>
+            <p class="subtitle is-4">{{ teammember.subtitle }}</p>
+          </a>
+            <p class="title is-4">
+              {% include contacts.html contacts=teammember.contacts %}
+              
+            </div>
         </div>
   
-      </a>
+      
   
     </div>
   {% endfor %}

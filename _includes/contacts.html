@@ -1,0 +1,20 @@
+<div class="content">
+    
+    {% for contact in include.contacts %}
+    
+        <span class="icon">
+            <a href="{{contact.url}}" target="_blank" rel="noopener noreferrer">
+            {% if contact.icon %}
+                {% if contact.icon contains " "%}
+                    <i class="{{ contact.icon }} fa-lg"></i>
+                {% else %}
+                    <i class="fas {{ contact.icon }} fa-lg"></i>
+                {% endif %}
+            {% else %}
+            <i class="fas fa-circle fa-xs"></i>
+            {% endif %}
+            </a>
+        </span> 
+    {% endfor %}
+    <span class="icon"></span>
+</div>
