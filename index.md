@@ -16,6 +16,7 @@ training_body: How can we help you level up your skills?
 team_head: Our Team
 team_body: Check out our fantastic team!
 sort: sort_order
+mode: hyperlink
 ---
 
 #### About Bounce Security
