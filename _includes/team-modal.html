@@ -10,7 +10,7 @@
     </a>
     <div class="modal" x-bind:class="open ? 'is-active' : ''" x-cloak>
         <div class="modal-background" x-on:click="open = false"></div>
-        <div class="modal-content-narrower modal-content">
+        <div class="modal-content-narrower modal-content" x-on:click="open = false">
             {% if include.teammember.largeimg %}
                 <img src="{{ include.teammember.largeimg | absolute_url }}" alt="{{ include.teammember.title }}">
             {% else %}
@@ -20,9 +20,12 @@
             <div class="column">
                 <p class="title is-3">{{ include.teammember.title }}</p>
                 <p class="subtitle is-3">{{ include.teammember.subtitle }}</p>
+                {% include contacts.html contacts=teammember.contacts %}
                 <div class="content">
                     {{ include.teammember.content }}
                 </div>
+                
+                <div class="content"></div>
             </div>
         </div>
     
