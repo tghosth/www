@@ -4,7 +4,7 @@ import { schedule } from '@netlify/functions'
 const BUILD_HOOK = process.env.BUILD_HOOK
 
 // Schedules the handler function
-const handler = schedule('0 1 * * *', async () => {
+const handler = schedule('* * * * *', async () => {
   await fetch(BUILD_HOOK, {
     method: 'POST'
   }).then(response => {
